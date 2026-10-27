@@ -1,0 +1,221 @@
+h1 {
+  color: #db189a;
+  font-size: 50;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0a9da;
+  color: #426c77;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #df11a1;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #d88fce;
+}
+
+img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 4px solid #fa0092;
+}
+/* Overall page */
+body {
+    background-color: #e8a6d3;
+    color: #d4148e;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+header {
+    background-color: #e00091;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+
+    /* Fade-in */
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Make each navigation item appear slightly after the previous one */
+nav a:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+nav a:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+nav a:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Main title */
+h1 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 38px;
+    color: #d4148e;
+    margin-left: 8px;
+
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.8s;
+
+    /* Makes the title stand out */
+    text-shadow: 2px 2px 0px #f7c5e8;
+}
+
+/* Image stays basically the same */
+img {
+    width: 200px;
+    border: 4px solid #e00091;
+    border-radius: 50%;
+
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+    animation-delay: 1.1s;
+}
+
+/* Paragraph */
+p {
+    color: #24758a;
+    font-size: 18px;
+
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 1.4s;
+}
+
+/* Footer */
+footer p {
+    animation-delay: 1.7s;
+}
+
+/* Fade in from transparent */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade in while moving slightly upward */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* MY WORK PAGE */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Each project */
+.project {
+    width: 280px;
+    text-align: center;
+
+    opacity: 0;
+
+    animation: projectFade 1.5s ease forwards;
+}
+
+/* First picture appears first */
+.project-one {
+    animation-delay: 0.5s;
+}
+
+/* Second picture appears slightly later */
+.project-two {
+    animation-delay: 1s;
+}
+
+/* Pictures */
+.project img {
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+
+    border: 4px solid #e00091;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(180, 0, 120, 0.3);
+
+    /* Makes the pictures move */
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Make the second picture move differently */
+.project-two img {
+    animation-delay: 1s;
+}
+
+/* Project titles */
+.project h2 {
+    color: #d4148e;
+    font-family: "Arial Black", Impact, sans-serif;
+    font-size: 24px;
+}
+
+/* Project descriptions */
+.project p {
+    color: #24758a;
+    font-size: 17px;
+}
+body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(140, 0, 255, 0.35), transparent 35%),
+    radial-gradient(circle at 80% 70%, rgba(80, 0, 255, 0.3), transparent 35%),
+    linear-gradient(135deg, #090014, #1a0033, #08000f);
+
+  color: white;
+  min-height: 100vh;
+}
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(150, 0, 255, 0.4), transparent 60%),
+    linear-gradient(135deg, #08000f, #1b0033, #08000f);
+
+
+
+
+
+
